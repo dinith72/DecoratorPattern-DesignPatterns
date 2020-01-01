@@ -12,23 +12,30 @@ public class CofeeCorner {
 		// add milk decorater for the dark roast 
 		Beverage darkRoastWithMilk = new Milk(darkRoast);
 		
-		// add mocha decorator for dark roast 
-		Beverage darkRoastWithMocha = new Mocha(darkRoast);
+		Beverage beverageSmall = new SmallSizeBeverage(darkRoastWithMilk);
 		
-		// add milk decorator for expresso
-		Beverage expressoWithMilk = new Milk(expresso);
+		Beverage beverageLarge = new LargeSizedBeverage(darkRoastWithMilk);
 		
-		// wrap the expresso twice with mocha decorator
-		Beverage expressoWithMocca = new Mocha(expresso);
-		expressoWithMocca = new Mocha(expressoWithMocca);
+//		// add mocha decorator for dark roast 
+//		Beverage darkRoastWithMocha = new Mocha(darkRoast);
+//		
+//		// add milk decorator for expresso
+//		Beverage expressoWithMilk = new Milk(expresso);
+//		
+//		// wrap the expresso twice with mocha decorator
+//		Beverage expressoWithMocca = new Mocha(expresso);
+//		expressoWithMocca = new Mocha(expressoWithMocca);
 		
 		System.out.println(darkRoastWithMilk.description() + " cost: " + darkRoastWithMilk.cost());
 		
-		System.out.println(darkRoastWithMocha.description() + " cost: " + darkRoastWithMocha.cost());
+//		System.out.println(darkRoastWithMocha.description() + " cost: " + darkRoastWithMocha.cost());
+//		
+//		
+//		System.out.println(expressoWithMilk.description() + " cost "  + expressoWithMilk.cost());
+//		System.out.println(expressoWithMocca.description() + " cost " + expressoWithMocca.cost());
 		
-		
-		System.out.println(expressoWithMilk.description() + " cost "  + expressoWithMilk.cost());
-		System.out.println(expressoWithMocca.description() + " cost " + expressoWithMocca.cost());
+		System.out.println(beverageSmall.description() + " cost: " + beverageSmall.cost());
+		System.out.println(beverageLarge.description() + " cost : " + beverageLarge.cost());
 	}
 
 }
