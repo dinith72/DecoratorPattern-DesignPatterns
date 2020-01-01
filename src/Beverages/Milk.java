@@ -21,8 +21,8 @@ public class Milk extends Condiments{
 
 	@Override
 	public Double cost() {
-		// calles the description method of the passed in wrapper object . removing wrappers layers by layer 
-		//This will continue until the components description method is called which returns value 
+		// calles the cost method of the passed in ( argument )  object and start removing wrapper objects  layers by layer 
+		//This will continue until the components cost method is called which returns value 
 		// then each of the wrapper  will add its cost ( its own modification ) to return value and return the final cost
 		return beverage.cost() + 10 ;
 	}

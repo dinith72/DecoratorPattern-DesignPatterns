@@ -1,5 +1,7 @@
 package Beverages;
 
+
+// the decorator abstract class
 public abstract class BeverageSizes extends Beverage{
 
 	

@@ -16,7 +16,7 @@ public class Mocha extends Condiments{
 
 	@Override
 	public Double cost() {
-		// calles the description method of the passed in wrapper object . removing wrappers layers by layer 
+		// calles the cost method of the passed in ( argument )  object and start removing wrapper objects  layers by layer 
 				//This will continue until the components description method is called which returns value 
 				// then it will add its cost component and return the final cost
 		
