@@ -1,5 +1,5 @@
 package Beverages;
-
+//concrete implementation of a component
 public class DarkRoast extends Beverage {
 
 	@Override
@@ -10,7 +10,7 @@ public class DarkRoast extends Beverage {
 
 	@Override
 	public Double cost() {
-		
+		// this will return value as its components
 		return 99.0;
 	}
 
